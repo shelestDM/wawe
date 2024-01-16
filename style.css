@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 52px 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  background: gray;
+}
+.header > .logo_wrapper {
+  position: absolute;
+}
+.header .nav .nav_list {
+  list-style-type: none;
+  display: flex;
+  gap: 45px;
+}
+.header .nav .nav_list > li {
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+.header .nav .nav_list > li > a {
+  color: inherit;
+  font-weight: inherit;
+}/*# sourceMappingURL=style.css.map */
