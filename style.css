@@ -7,7 +7,7 @@
   color: black;
 }
 
-h1, h2, h3, h4, h5, h6, b {
+h1, h2, h3, h4, h5, h6, b, sub {
   font-family: "Raleway", sans-serif;
 }
 
@@ -144,6 +144,7 @@ h1, h2, h3, h4, h5, h6, b {
 }
 
 #what_youll_recieve {
+  background: #F8F8F8;
   width: 100%;
   height: 953px;
   display: flex;
@@ -190,4 +191,182 @@ h1, h2, h3, h4, h5, h6, b {
   font-weight: 300;
   line-height: normal;
   letter-spacing: 0.6px;
+}
+#what_youll_recieve > .about_us {
+  width: 1200px;
+  margin: 2px auto 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#what_youll_recieve > .about_us > .statistics > .stat_item:nth-child(-n+2) {
+  margin-bottom: 18px;
+}
+#what_youll_recieve > .about_us > .statistics > .stat_item {
+  color: #242121;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+}
+#what_youll_recieve > .about_us > .statistics > .stat_item > div {
+  margin-bottom: 1px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#what_youll_recieve > .about_us > .statistics > .stat_item > div > img {
+  width: 200px;
+  height: 15px;
+}
+#what_youll_recieve > .about_us > .statistics > .stat_item > div > .second_wave {
+  width: 247px;
+}
+#what_youll_recieve > .about_us > .statistics > .stat_item > div > .third_wave {
+  width: 293px;
+}
+#what_youll_recieve > .about_us > .statistics > .stat_item > div > p {
+  color: #242121;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+}
+#what_youll_recieve > .about_us > .about_education > p {
+  width: 600px;
+  color: #242121;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+}
+#what_youll_recieve > .about_us > .about_education > p:nth-child(1) {
+  margin-bottom: 30px;
+}
+
+#cta {
+  height: 903px;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  gap: 41px;
+}
+#cta > .cta_info {
+  align-self: center;
+  width: 555px;
+}
+#cta > .cta_info > h4 {
+  position: relative;
+  margin-bottom: 100px;
+  color: #01353E;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+#cta > .cta_info > h4 > sub {
+  position: absolute;
+  color: #00B2A0;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+#cta > .cta_info > p {
+  color: #242121;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+}
+#cta > .cta_info > p:nth-child(-n+3) {
+  margin-bottom: 30px;
+}
+#cta > .cta_image {
+  width: 960px;
+  height: 850px;
+}
+
+#galery {
+  margin-top: 147px;
+  height: 1262px;
+}
+#galery > h5 {
+  position: relative;
+  margin-bottom: 200px;
+  text-align: center;
+  color: #01353E;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+#galery > h5 > sub {
+  position: absolute;
+  color: #00B2A0;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+#galery > .galery_info {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+#galery > .galery_info > button {
+  width: 350px;
+  height: 70px;
+  border: 1px solid #C4C4C4;
+  background: #FFF;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #242121;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+}
+#galery > .galery_info > .galery_categorys {
+  display: flex;
+  align-self: start;
+  gap: 20px;
+}
+#galery > .galery_info > .galery_categorys > p {
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #242121;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+}
+#galery > .galery_info > .images_wrapper {
+  display: flex;
+  gap: 40px;
+}
+#galery > .galery_info > .images_wrapper > .images_left_side, #galery > .galery_info > .images_wrapper .images_right_side {
+  width: 580px;
+  display: flex;
+  gap: 40px 37px;
+  flex-wrap: wrap;
+}
+#galery > .galery_info > .images_wrapper > .images_left_side > img, #galery > .galery_info > .images_wrapper .images_right_side > img {
+  transition: 0.5s;
+}
+#galery > .galery_info > .images_wrapper > .images_left_side > img:hover, #galery > .galery_info > .images_wrapper .images_right_side > img:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */

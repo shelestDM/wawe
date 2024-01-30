@@ -11,7 +11,7 @@ $accent_color: #00B2A0;
     color: black;
 }
 
-h1,h2,h3,h4,h5,h6,b{
+h1,h2,h3,h4,h5,h6,b,sub{
     font-family: 'Raleway', sans-serif;
 }
 
@@ -151,6 +151,7 @@ h1,h2,h3,h4,h5,h6,b{
 }
 
 #what_youll_recieve{
+    background: #F8F8F8;
     width: 100%;
     height: 953px;
     display: flex;
@@ -185,4 +186,146 @@ h1,h2,h3,h4,h5,h6,b{
             }
         }
     }
+
+    >.about_us{
+        width: 1200px;
+        margin: 2px auto 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        >.statistics{
+            >.stat_item:nth-child(-n+2){
+                margin-bottom: 18px;
+            }
+            >.stat_item{
+                @include styling_text($main_text_color,14px,normal,300,18px,0.6px);
+                >div{
+                    margin-bottom: 1px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    >img{
+                        width: 200px;
+                        height: 15px;
+                    }
+                    >.second_wave{
+                        width: 247px
+                    }
+                    >.third_wave{
+                        width: 293px
+                    }
+                    >p{
+                        @include styling_text($main_text_color,24px,normal,400,18px,0.6px );
+                    }
+                }
+            }
+        }
+
+        >.about_education{
+            >p{
+                width: 600px;
+                @include styling_text($main_text_color,14px,normal,300,18px,0.6px);
+            }
+            >p:nth-child(1){
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+#cta{
+    height: 903px;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    gap: 41px;
+
+    >.cta_info{
+        align-self: center;
+        width: 555px;
+        >h4{
+            position: relative;
+            margin-bottom: 100px;
+            @include styling_text($secondary_heading_color,48px ,normal ,600 ,normal ,0.6px );
+            >sub{
+                position: absolute;
+                @include styling_text($accent_color,72px ,normal ,600 ,normal ,0.6px );
+            }
+        }
+        >p{
+            @include styling_text($main_text_color,14px,normal,300,18px,0.6px);
+        }
+        >p:nth-child(-n+3){
+            margin-bottom: 30px;
+        }
+    }
+
+    >.cta_image{
+        width: 960px;
+        height: 850px;
+    }
+}
+
+#galery{
+    margin-top: 147px;
+    height: 1262px;
+
+    >h5{
+        position: relative;
+        margin-bottom: 200px;
+        text-align: center;
+        @include styling_text($secondary_heading_color,48px ,normal ,600 ,normal ,0.6px );
+        >sub{
+            position: absolute;
+            @include styling_text($accent_color,72px ,normal ,600 ,normal ,0.6px );
+        }
+    }
+
+    >.galery_info{
+        width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+
+        >button{
+            width: 350px;
+            height: 70px;
+            border: 1px solid #C4C4C4;
+            background: #FFF;
+            cursor: pointer;
+            text-transform: uppercase;
+            @include styling_text($main_text_color,24px,normal,400,18px,0.6px);
+        }
+
+        >.galery_categorys{
+            display: flex;
+            align-self: start;
+            gap: 20px;
+            >p{
+                text-transform: uppercase;
+                cursor: pointer;
+                @include styling_text($main_text_color,24px,normal,400,18px,0.6px);
+            }
+        }
+        >.images_wrapper{
+            display: flex;
+            gap: 40px;
+            >.images_left_side, .images_right_side{
+                width: 580px;
+                display: flex;
+                gap: 40px 37px;
+                flex-wrap: wrap;
+                >img{
+                    transition: 0.5s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+       
+    }    
 }
