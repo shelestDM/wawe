@@ -329,3 +329,197 @@ h1,h2,h3,h4,h5,h6,b,sub{
        
     }    
 }
+
+#citation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    background: #F8F8F8;
+    >.citation_wrapper{
+        position: relative;
+        >p{
+            @include styling_text($main_text_color,36px,italic,400,40px,0.6px )
+        }
+        >span{
+            position: absolute;
+            bottom: -18px;
+            right: -125px;
+            @include styling_text($main_text_color,14px,italic,300,18px, 0.6px)
+        }
+    }
+}
+
+#video{
+    width: 100%;
+    height: 1003px;
+    background: white;
+    display: grid;
+    place-items: center;
+    >iframe{
+        width: 1200px;
+        height: 600px;
+    }
+}
+
+#statistics{
+    width: 100%;
+    height: 296px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 100px;
+    >.stat_item{
+        text-align: center;
+       >p{
+        @include styling_text(#01353E,64px, normal, 700, 75px, 0.6px);
+        margin-bottom: 5px;
+       }
+       >span{
+        @include styling_text($main_text_color,14px, normal, 300, 18px, 0.6px);
+       }
+    }
+}
+
+#blog{
+    height: 1285px;
+    background: white;
+    width: 100%;
+    position: relative;
+    >h6{
+        position: relative;
+        margin-bottom: 229px;
+        text-align: center;
+        @include styling_text($secondary_heading_color,48px ,normal ,600 ,normal ,0.6px );
+        >sub{
+            position: absolute;
+            @include styling_text($accent_color,72px ,normal ,600 ,normal ,0.6px );
+        }
+    }
+    >.slider_wrapper{
+        width: 100%;
+        height: 800px;
+        background: #24212180;
+        z-index: 10;
+        position: relative;
+        >.slider{
+            width: 100%;
+            height: 100%;
+            >.slide{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                >img{
+                    width: 100%;
+                    height: 800px;
+                    object-fit: cover;
+                }
+                >.slide_info{
+                    position: absolute;
+                    z-index: 50;
+                    top: 314px;
+                    right: 360px;
+                    width: 600px;
+                    >h6{
+                        @include styling_text(#FFFFFF,48px ,normal ,600 ,normal ,0.6px );
+                    }
+                    >p{
+                        @include styling_text(#FFFFFF,14px, normal, 300, 18px, 0.6px);
+                    }
+                }
+                >.bg_dark{
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    right: 0;
+                    height: 100%;
+                    background: #24212180;
+                }
+            }
+        }
+
+        >.controls{
+            position: absolute;
+            width: 100%;
+            bottom: 77px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            >p{
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background: white;
+                cursor: pointer;
+                transition: 0.5s;
+                &:hover{
+                    transform: scale(1.5);
+                }
+            }
+            >.active{
+                background: $accent_color;
+            }
+        }
+       
+    }
+}
+
+#services{
+    width: 100%;
+    height: 1245px;
+    background: #F8F8F8;
+    padding-top: 200px;
+    >h6{
+        position: relative;
+        margin-bottom: 183px;
+        text-align: center;
+        text-transform: capitalize;
+        @include styling_text($secondary_heading_color,48px ,normal ,600 ,normal ,0.6px );
+        >sub{
+            position: absolute;
+            @include styling_text($accent_color,72px ,normal ,600 ,normal ,0.6px );
+        }
+    }
+
+    >.services_wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        >.service{
+            width: 360px;
+            height: 577px;
+            background: white;
+            text-align: center;
+            position: relative;
+            padding: 45px 0px;
+            >h6{
+                margin-bottom: 58px;
+                text-transform: uppercase;
+                @include styling_text(#01353E,36px,normal,400,40px,0.6px)
+            }
+            >ul{
+                list-style-type: none;
+                text-align: left;
+                padding: 0 42px 0 43px;
+                >li{
+                    margin-bottom: 20px;
+                    @include styling_text($main_text_color,14px,normal,400,18px,0.6px)
+                }
+            }
+            >p{
+                position: absolute;
+                bottom: 45px;
+                text-align: center;
+                width: 100%;
+                @include styling_text(#01353E,36px,normal,400,40px,0.6px);
+                >span{
+                    @include styling_text(#01353E,18px,normal,400,22px,0.6px)
+                }
+            }
+        }
+    }
+
+}
