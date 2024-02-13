@@ -630,4 +630,171 @@ h1, h2, h3, h4, h5, h6, b, sub {
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0.6px;
+}
+
+#map {
+  width: 100%;
+  height: 1040px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  text-align: center;
+}
+#map > .map_img {
+  width: 1473px;
+  height: 640px;
+}
+#map > .pin {
+  width: 56.7px;
+  height: 70px;
+  position: absolute;
+  top: 299px;
+}
+
+#form {
+  width: 100%;
+  height: 1182px;
+}
+#form > h6 {
+  position: relative;
+  margin-bottom: 229px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #01353E;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+#form > h6 > sub {
+  position: absolute;
+  color: #00B2A0;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+#form .form_info {
+  display: flex;
+  gap: 31px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+#form .form_info .form {
+  width: 569px;
+  height: 460px;
+}
+#form .form_info .form > input {
+  color: black;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+  width: 100%;
+  height: 38px;
+  border: none;
+  border-bottom: 1px solid #DADADA;
+}
+#form .form_info .form > input::-moz-placeholder {
+  color: #00B2A0;
+}
+#form .form_info .form > input::placeholder {
+  color: #00B2A0;
+}
+#form .form_info .form > input:first-child {
+  margin-bottom: 32px;
+}
+#form .form_info .form > textarea {
+  width: 100%;
+  margin-top: 53px;
+  height: 156px;
+  border: none;
+  resize: none;
+  border-bottom: 1px solid #DADADA;
+  color: black;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+}
+#form .form_info .form > textarea::-moz-placeholder {
+  color: #00B2A0;
+}
+#form .form_info .form > textarea::placeholder {
+  color: #00B2A0;
+}
+#form .form_info .form > button {
+  margin-top: 70px;
+  width: 350px;
+  height: 70px;
+  border: 1px solid #C4C4C4;
+  background: #FFF;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #242121;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+}
+#form .form_info > .info {
+  width: 600px;
+  height: 460px;
+  padding: 49px 52px 71px;
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+  background-color: #F8F8F8;
+  color: #242121;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+}
+#form .social {
+  display: flex;
+  gap: 11px;
+  margin: 200px auto 0px;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: black;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+}
+#form .social > .accent {
+  color: #00B2A0;
+}
+
+#footer {
+  width: 100%;
+  height: 200px;
+  background-color: #00B2A0;
+  display: grid;
+  place-items: center;
+}
+#footer > .logo_wrapper {
+  position: relative;
+}
+#footer > .logo_wrapper > b {
+  color: #fff;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+#footer > .logo_wrapper > b.bottom {
+  position: absolute;
+  top: 20px;
+  left: -21px;
 }/*# sourceMappingURL=style.css.map */
